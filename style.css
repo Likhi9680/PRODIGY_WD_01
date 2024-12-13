@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Menu Styles */
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ed6c0f; /* Pink */
+    color: rgb(15, 15, 15);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    z-index: 1000; /* Ensure the nav appears above other content */
+}
+
+.nav.scrolled {
+    background-color: #f6570d; 
+    box-shadow: 0 4px 6px #e6ee04e5;
+}
+
+.nav a {
+    color: #5af56c;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.nav a:hover {
+    color: hsl(203, 85%, 52%); 
+    background-color: #f546d8; 
+    border-radius: 4px;
+}
+
+.content {
+    padding-top: 60px; /* Account for fixed nav */
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items to the top */
+    align-items: flex-start; /* Align items to the left */
+    font-size: 24px;
+    border-bottom: 1px solid #ccc;
+    padding: 20px; /* Add padding to sections */
+    cursor: pointer;
+}
+
+section:nth-child(1) {
+    background-color: #64f030; /* Soft Pink */
+}
+
+section:nth-child(2) {
+    background-color: #2e96f0; /* Soft Blue */
+}
+
+section:nth-child(3) {
+    background-color: #f648dc; /* Soft Green */
+}
+
+section:nth-child(4) {
+    background-color: #18ddf3; /* Soft Yellow */
+}
+
+.info {
+    display: none;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+    max-width: 600px;
+}
+
+.info.active {
+    display: block;
+}
+
+ul {
+    list-style-type: disc; /* Bullets */
+    margin-left: 20px; /* Indentation for the bullets */
+}
+
+li {
+    margin-bottom: 10px; /* Add space between each list item */
+}

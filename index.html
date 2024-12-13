@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Navigation Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="nav">
+        <a href="#section1">Home</a>
+        <a href="#section2">About</a>
+        <a href="#section3">Services</a>
+        <a href="#section4">Contact</a>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="content">
+        <section id="section1" onclick="toggleInfo('info1')">
+            Home Section
+            <div id="info1" class="info">
+                <ul>
+                    <li>Welcome to our website! Here, you'll find the latest updates and highlights from our platform.</li>
+                    <li>Explore the key features and offerings we provide to enhance your experience.</li>
+                    <li>Stay informed about upcoming events and new services tailored just for you.</li>
+                    <li>Our goal is to make your interaction with us seamless and enjoyable.</li>
+                    <li>Enjoy browsing through the content we have prepared for you.</li>
+                </ul>
+            </div>
+        </section>
+        <section id="section2" onclick="toggleInfo('info2')">
+            About Section
+            <div id="info2" class="info">
+                <ul>
+                    <li>Discover who we are and what drives us to excel in our field.</li>
+                    <li>Our team is dedicated to providing top-notch services to meet your needs.</li>
+                    <li>We value innovation, integrity, and customer satisfaction above all.</li>
+                    <li>Learn about our history, mission, and the vision that guides us forward.</li>
+                    <li>Join us on our journey as we continue to grow and evolve.</li>
+                </ul>
+            </div>
+        </section>
+        <section id="section3" onclick="toggleInfo('info3')">
+            Services Section
+            <div id="info3" class="info">
+                <ul>
+                    <li>Our services are designed to help you achieve your goals efficiently.</li>
+                    <li>We offer tailored solutions that cater to diverse needs and preferences.</li>
+                    <li>From consultation to implementation, we are here to support you every step of the way.</li>
+                    <li>Explore our wide range of offerings to find the perfect fit for you.</li>
+                    <li>Your success is our priority, and we strive to deliver exceptional results.</li>
+                </ul>
+            </div>
+        </section>
+        <section id="section4" onclick="toggleInfo('info4')">
+            Contact Section
+            <div id="info4" class="info">
+                <ul>
+                    <li>We are here to assist you with any inquiries or concerns you may have.</li>
+                    <li>Contact us via email, phone, or our social media channels for prompt assistance.</li>
+                    <li>Our team is available to provide support and answer your questions.</li>
+                    <li>We value your feedback and look forward to hearing from you.</li>
+                    <li>Let us help you make the most of our services and resources.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
